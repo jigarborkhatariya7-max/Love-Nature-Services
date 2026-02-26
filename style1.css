@@ -1,0 +1,241 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "DM Sans", sans-serif;
+        }
+        header{
+           background-image: url(./images/image\ \(1\).png); 
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+           min-height: 60vh;
+           width: 100%;
+           position: relative;
+        }
+        .nav-bar{
+            display: flex;
+            align-items: center;
+            justify-content: space-around; 
+            flex-wrap: wrap;  
+        }
+        .logo img{
+            height: 80px;
+            padding: 15px;
+        }
+        .content ul{
+            display: flex;
+            gap: 45px;
+            flex-wrap: wrap;
+        }
+        .content ul li{
+            list-style: none; 
+        }
+        .content ul li a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 20px;
+        }
+
+        .main-header-text{
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            color: whitesmoke;
+            width: auto;
+            /* position:absolute;
+            bottom: 15%; */
+            width: 100%;
+             min-height: 30vh; 
+            justify-content: center;
+        }
+        .we{
+            font-size: 80px;
+            font-weight: 400;
+        }
+        
+        .about-main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+
+        .about-us{
+            margin:60px 0;
+        }
+
+        .about-us h4{
+            font-size: 25px;
+            text-align: center;
+            max-width: 620px;
+            line-height: 35px;
+            color: #536942;
+            font-weight: 300;
+        }
+        .about-main-img img{
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            display: block;
+        }
+        
+        .about-text{
+            display: flex;
+            gap: 40px;
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px;
+            
+        }
+    
+        .about-text h3{
+            padding:15px 0;
+            font-size: 28px;
+            color: #536942;
+            text-align: center;
+        }
+        .about-text p{
+            font-size: 18px;
+            color: #536942;
+            text-align: center;
+        }
+
+        .quote{
+            min-height: 50vh;
+            width: 100%;
+            background-color: #f6f8f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            margin-top: 35px;
+        }
+        .quote h3{
+            min-width: 320px;
+            max-width: 650px;
+            text-align: center;
+            color: #536942;
+            font-size: 25px;
+            line-height: 35px;
+            font-weight: 300;
+        }
+        .avatar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .avatar img{
+            height: 50px;
+        }
+        .avatar span{
+            color: #536942;
+            margin-top: 15px;
+        }
+
+        .footer-second{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #536942;
+            height: 15vh;
+            gap: 85px;
+            flex-wrap: wrap;
+        }
+        .footer-second div img{
+            height: 65px;
+        }
+        .footer-second ul{
+            display: flex;
+            gap:25px;
+           
+        }
+        .footer-second ul li{
+            list-style: none;
+        }
+        .footer-second ul li a{
+            text-decoration: none;
+            color: #536942;
+        }
+         @media (max-width:767px) {
+            header{
+               min-height: 70vh;
+            }
+            .main-header-text{
+                min-height: 60vh;
+                padding: 0 20px;
+                text-align: center;
+           }
+           .we{
+            font-size: 65px;  
+           }
+            .footer-second{
+            flex-direction: column;
+            height: 50vh;
+           }
+ 
+
+        }
+
+        @media (max-width:576px){
+           header{
+            height: 60vh;
+           }
+           .content ul li a{
+            font-size: 15px;
+           }
+
+           .we{
+            font-size: 48px;  
+           }
+           .about-text{
+                flex-wrap: wrap;
+            }
+            .footer-second{
+                flex-direction: column;
+                height: 50vh;
+            }
+        }
+
+        @media (max-width:420px){
+         
+            .nav-bar{
+                align-items: center;
+                gap: 10px;
+            }
+
+            .content ul{
+                gap: 10px;
+                align-items: center;
+
+            }
+
+            .content ul li a{
+                font-size: 14px;
+            }
+
+            .about-text{
+                flex-wrap: wrap;
+            }
+
+             .footer-second{
+            flex-direction: column;
+            height: 50vh;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .footer-second ul{
+            flex-direction: column;
+            gap: 5px;
+            text-align: center;
+        }
+          
+        }
+        
